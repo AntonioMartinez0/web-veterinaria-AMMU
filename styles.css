@@ -1,0 +1,115 @@
+/* Estilos básicos para todos los dispositivos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h4 {
+    color: #2C3E50;
+}
+
+/* Estilos para pantallas pequeñas (celulares) */
+@media (max-width: 576px) {
+    /* Ajusta los encabezados */
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    h4 {
+        font-size: 1.1em;
+    }
+
+    /* Ajusta la imagen principal */
+    #imagen-unica {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Menú de navegación */
+    .navbar-brand {
+        font-size: 1.2em;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    /* Formulario de contacto */
+    .contact-card p, .form-group label {
+        font-size: 0.9em;
+    }
+
+    /* Mapa de ubicación */
+    .map-container iframe {
+        width: 100%;
+    }
+}
+
+/* Estilos para tabletas en modo vertical y horizontal */
+@media (min-width: 577px) and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+
+    #imagen-unica {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Estilos para laptops y tablets grandes */
+@media (min-width: 769px) and (max-width: 992px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+
+    #imagen-unica {
+        width: 80%;
+    }
+
+    .navbar-brand {
+        font-size: 1.8em;
+    }
+
+    /* Mapa */
+    .map-container iframe {
+        width: 80%;
+    }
+}
+
+/* Estilos para pantallas grandes (desktops y televisores) */
+@media (min-width: 993px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    #imagen-unica {
+        width: 70%;
+        margin: auto;
+    }
+
+    .map-container iframe {
+        width: 75%;
+    }
+}
+

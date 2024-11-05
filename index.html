@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria Exótica</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener este archivo CSS -->
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="#">🐾 Veterinaria Occidente</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#equipo">Nuestro Equipo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Sección de Inicio -->
+<section id="inicio" class="container text-center mt-5 pt-5">
+    <h1 class="display-4 mt-4">Bienvenidos a la Clínica Veterinaria Occidente</h1>
+    <p class="lead">Dedicados al cuidado especializado de tus mascotas exóticas 🐢🐦🐍.</p>
+    <img src="images/vete_occidente.jpg" alt="Clínica Veterinaria" id="imagen-unica">
+    <button class="btn btn-lg btn-success mt-4">Agendar una cita</button>
+</section>
+
+<!-- Sección de Servicios -->
+<section id="servicios" class="container mt-5">
+    <h2 class="text-center">Nuestros Servicios</h2>
+    <div class="row text-center mt-4">
+        <!-- Servicio 1 -->
+        <div class="col-md-4">
+            <i class="fas fa-stethoscope fa-3x text-primary mb-3"></i>
+            <h3>Consulta General</h3>
+            <p>Revisión general y evaluación de salud.</p>
+        </div>
+        <!-- Servicio 2 -->
+        <div class="col-md-4">
+            <i class="fas fa-syringe fa-3x text-primary mb-3"></i>
+            <h3>Vacunación</h3>
+            <p>Inmunización completa para tu mascota.</p>
+        </div>
+        <!-- Servicio 3 -->
+        <div class="col-md-4">
+            <i class="fas fa-paw fa-3x text-primary mb-3"></i>
+            <h3>Cirugía</h3>
+            <p>Intervenciones quirúrgicas seguras.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Nuestro Equipo -->
+<section id="equipo" class="container mt-5">
+    <h2 class="text-center">Nuestro Equipo</h2>
+    <div class="row text-center mt-4">
+        <div class="col-md-4">
+            <img src="images/doct1.jpg" alt="Veterinario 1" class="img-fluid rounded-circle mb-3" width="200">
+            <h4>Dr. Juan Pérez</h4>
+            <p>Especialista en reptiles</p>
+        </div>
+        <div class="col-md-4">
+            <img src="images/doctora.jpg" alt="Veterinario 2" class="img-fluid rounded-circle mb-3" width="200">
+            <h4>Dra. Ana García</h4>
+            <p>Experta en aves exóticas</p>
+        </div>
+        <div class="col-md-4">
+            <img src="images/doct2.jpg" alt="Veterinario 3" class="img-fluid rounded-circle mb-3" width="200">
+            <h4>Dr. Luis Martínez</h4>
+            <p>Cirujano de pequeños mamíferos</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Contacto -->
+<section id="contacto" class="container mt-5 text-center">
+    <h2>Contacto</h2>
+    <div class="contact-card p-4">
+        <p><strong>Teléfono:</strong> <span class="phone">+1 800 555 1234</span></p>
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <form class="mt-4">
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <!-- Mapa de Ubicación -->
+    <div class="map-container mt-4">
+        <h3>Ubicación</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.9494584691214!2d-122.0842499848466!3d37.422065979825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24d5e73e3b1%3A0x82b0b2de9e24d7f5!2sGoogleplex!5e0!3m2!1ses!2sus!4v1633704990928!5m2!1ses!2sus" 
+            width="75%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-3 mt-5">
+    <p>Síguenos en nuestras redes sociales:</p>
+    <a href="#" class="text-white mr-3"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="#" class="text-white mr-3"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="#" class="text-white mr-3"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="#" class="text-white mr-3"><i class="fab fa-linkedin fa-2x"></i></a>
+    <a href="#" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
